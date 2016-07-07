@@ -3,8 +3,10 @@ $(document).ready(function(){
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position){
         
-      $.getJSON("https://api.wunderground.com/api/c451ff398a91d3b1/geolookup/q/" + position.coords.latitude + "," + position.coords.longitude + ".json", function(data) {     
+      $.getJSON("https://api.wunderground.com/api/c451ff398a91d3b1/geolookup/q/" + position.coords.latitude + "," + position.coords.longitude + ".json", function(data) {
+           
         $.getJSON("https://api.wunderground.com/api/c451ff398a91d3b1/conditions/q/" + data.location.nearby_weather_stations.airport.station[0].state + "/" + data.location.city + ".json", function(data1) {
+
           let html = "";
           let html1 = "";
 

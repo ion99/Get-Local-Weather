@@ -1,7 +1,7 @@
 $(document).ready(function(){
   function getLocalWeather(){
    
-    let html = "";
+    let html = ""; // use var instead let if you do not use Chrome, or babel
     let html1 = "";
     $.getJSON("https://api.wunderground.com/api/c451ff398a91d3b1/forecast/conditions/q/autoip.json", function(data){
       //console.log("Yahooo",data);

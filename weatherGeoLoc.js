@@ -10,11 +10,11 @@ $(document).ready(function(){
           let html = "";
           let html1 = "";
 
-          html += "<div class='weather'>" + data1.current_observation.display_location.full + "<br>" + "<div class='far'>" + data1.current_observation.temp_f + " " + "<span class='cf clickable'>&#8457;</span>" + "</div>" +
-  data1.current_observation.weather + "<br>" + "<img src='" + data1.current_observation.icon_url.slice(0,4) + "s" + data1.current_observation.icon_url.slice(4) + "'" + "height='150' width='150'>" + "</div>";
+          html += "<div class='weather'>" + data1.current_observation.display_location.full + "<br><div class='far'>" + data1.current_observation.temp_f + " <span class='cf clickable'>&#8457;</span></div>" +
+  data1.current_observation.weather + "<br><img src='" + data1.current_observation.icon_url.slice(0,4) + "s" + data1.current_observation.icon_url.slice(4) + "'height='150' width='150'><p class='time'>" + data1.current_observation.observation_time + "</p></div>";
           
-          html1 += "<div class='weather'>" + data1.current_observation.display_location.full + "<br>" + "<div class='cel'>" + data1.current_observation.temp_c + " " + "<span class='fc clickable'>&#8451;</span>" + "</div>" +
-  data1.current_observation.weather + "<br>" + "<img src='" + data1.current_observation.icon_url.slice(0,4) + "s" + data1.current_observation.icon_url.slice(4) + "'" + "height='150' width='150'>" + "</div>";
+          html1 += "<div class='weather'>" + data1.current_observation.display_location.full + "<br>" + "<div class='cel'>" + data1.current_observation.temp_c + " <span class='fc clickable'>&#8451;</span></div>" +
+  data1.current_observation.weather + "<br><img src='" + data1.current_observation.icon_url.slice(0,4) + "s" + data1.current_observation.icon_url.slice(4) + "'height='150' width='150'><p class='time'>" + data1.current_observation.observation_time + "</p></div>";
             
           $("#data").html(html);
           
@@ -30,5 +30,9 @@ $(document).ready(function(){
      });
    }
   } 
-  getLocalWeather();      
+  getLocalWeather();
+
+  $("#refresh").click(function(){
+    getLocalWeather();
+  })      
 })  

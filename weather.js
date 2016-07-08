@@ -9,13 +9,13 @@ $(document).ready(function(){
       "<br><div class='far'>" + data.current_observation.temp_f + 
       " <span class='cf clickable'>&#8457;</span></div>" + data.current_observation.weather + 
       "<br><img src='" + data.current_observation.icon_url.slice(0,4) + 
-      "s" + data.current_observation.icon_url.slice(4) + "'height='150' width='150'></div>";  
+      "s" + data.current_observation.icon_url.slice(4) + "'height='150' width='150'><p class='time'>" + data.current_observation.observation_time + "</p></div>";  
       
       html1 += "<div class='weather'>" + data.current_observation.display_location.full + 
       "<br><div class='cel'>" + data.current_observation.temp_c + 
       " <span class='fc clickable'>&#8451;</span></div>" + data.current_observation.weather + 
       "<br><img src='" + data.current_observation.icon_url.slice(0,4) + 
-      "s" + data.current_observation.icon_url.slice(4) + "'height='150' width='150'></div>";
+      "s" + data.current_observation.icon_url.slice(4) + "'height='150' width='150'><p class='time'>" + data.current_observation.observation_time + "</p></div>";
       
       $("#data").html(html);
           
@@ -28,5 +28,9 @@ $(document).ready(function(){
       })
     })
   } 
-  getLocalWeather();      
+  getLocalWeather();
+
+  $("#refresh").click(function(){
+    getLocalWeather();
+  })      
 })  

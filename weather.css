@@ -11,11 +11,20 @@ body {
   margin: 2% auto auto auto;
   display: table;
   font-family: "Helvetica", sans-serif;
-  font-size: 50px;
+  font-size: 35px;
   font-style: normal;
   font-weight: bold;
-  padding-top: 100px;
+  padding-top: 10px;
   box-sizing: border-box;
+}
+
+.time {
+  font-size: 20px;
+}
+
+.refresh {
+  text-align: center;
+  margin: auto;
 }
 
 #data {

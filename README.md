@@ -12,3 +12,7 @@ In the command line:
 
 1. ```npm install```
 2. ```node app.js```
+
+## Open in your browser:
+
+http://localhost:3000/weather.html

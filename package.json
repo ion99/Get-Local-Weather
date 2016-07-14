@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ion99/Get-Local-Weather/issues"
   },
-  "homepage": "https://github.com/ion99/Get-Local-Weather#readme"
+  "homepage": "https://github.com/ion99/Get-Local-Weather#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }

@@ -1,0 +1,19 @@
+{
+  "name": "get_local_weather",
+  "version": "1.0.0",
+  "description": "shows the weather using user geoloc",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ion99/Get-Local-Weather.git"
+  },
+  "author": "Ion Gorincioi",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/ion99/Get-Local-Weather/issues"
+  },
+  "homepage": "https://github.com/ion99/Get-Local-Weather#readme"
+}

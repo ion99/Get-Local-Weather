@@ -1,4 +1,13 @@
 $(document).ready(function(){
+
+  $("#loading").ajaxStart(function () {
+    $(this).show();
+  });
+
+  $("#loading").ajaxStop(function () {
+   $(this).hide();
+  });
+
   function getLocalWeather(){
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position){

@@ -42,6 +42,16 @@ $(document).ready(function(){
   getLocalWeather();
 
   $("#refresh").click(function(){
+
+    
+  $("#loading").ajaxStart(function () {
+    $(this).show();
+  });
+
+  $("#loading").ajaxStop(function () {
+   $(this).hide();
+  });
+    
     getLocalWeather();
   })      
 })  

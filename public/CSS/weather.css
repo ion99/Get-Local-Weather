@@ -11,7 +11,8 @@ body {
   margin: 2% auto auto auto;
   display: table;
   font-family: "Helvetica", sans-serif;
-  font-size: 35px;
+  /*font-size: 35px;*/
+  font-size: 5vw;
   font-style: normal;
   font-weight: bold;
   padding-top: 10px;
@@ -19,7 +20,8 @@ body {
 }
 
 .time {
-  font-size: 20px;
+  /*font-size: 20px;*/
+  font-size: 2vw;
 }
 
 .refresh {

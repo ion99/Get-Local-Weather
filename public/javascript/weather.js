@@ -1,4 +1,13 @@
 $(document).ready(function(){
+
+  $("#loading").ajaxStart(function () {
+    $(this).show();
+  });
+
+  $("#loading").ajaxStop(function () {
+   $(this).hide();
+  });  
+  
   function getLocalWeather(){
    
     let html = ""; // use var instead let if you do not use Chrome, or babel

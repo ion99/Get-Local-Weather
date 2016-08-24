@@ -19,3 +19,6 @@ http://localhost:3000/weather.html
 
 ### Options:
 
+weather.js - Determines the weather using the ip location, wich is not accurate sometimes.
+
+weatherGeoLoc.js - Uses the client's Geolocation. 

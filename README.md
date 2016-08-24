@@ -16,3 +16,6 @@ In the command line:
 ## Open in your browser:
 
 http://localhost:3000/weather.html
+
+### Options:
+
